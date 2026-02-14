@@ -1,118 +1,147 @@
 
-📊 Customer-Segmentation-Sales-Analysis
+<!-- PROJECT BANNER -->
+<h1 align="center">📊 Customer-Segmentation-Sales-Analysis
+</h1>
+<h3 align="center">End-to-End Data Analytics Project | Python • SQL • Power BI</h3>
 
-🔎 Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-EDA-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/PostgreSQL-SQL Analysis-336791?style=for-the-badge&logo=postgresql">
+  <img src="https://img.shields.io/badge/PowerBI-Dashboard-yellow?style=for-the-badge&logo=powerbi">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+</p>
 
-This project analyses customer shopping behaviour using a transactional dataset.
-The workflow covers data loading, cleaning, exploratory data analysis (EDA), SQL-based business queries, and building an interactive dashboard.
-The goal is to extract actionable insights that help businesses improve marketing, customer retention, and revenue strategy.
+---
 
-⸻
+## 🔎 Project Overview
+This project analyses customer shopping behaviour using transactional data to uncover insights into revenue patterns, customer segments, product performance, and purchase trends.
 
-🎯 Objective
-	•	Understand customer purchasing patterns
-	•	Identify high-value customer segments
-	•	Evaluate product performance and discounts
-	•	Support data-driven decision-making through dashboards and reports
+The project demonstrates the **complete data analytics workflow** from raw dataset to business recommendations:
+- Data cleaning and EDA in Python  
+- Business queries in SQL (PostgreSQL)  
+- Interactive dashboard in Power BI  
+- Final presentation and reporting  
 
-⸻
+---
 
-🗂 Dataset
-	•	~3,900 purchase records
-	•	Customer demographics (age, gender, location, subscription status)
-	•	Product details and categories
-	•	Purchase amount, frequency, discounts, and ratings
-	•	Minor missing values handled during preprocessing
+## 🎯 Business Objective
+- Identify high-value customer segments  
+- Understand revenue drivers  
+- Analyze product and discount performance  
+- Support data-driven marketing and retention strategies  
 
-⸻
+---
 
-🛠 Tools Used
-	•	Python – data loading, cleaning, feature engineering, EDA
-	•	PostgreSQL – business analysis using SQL queries
-	•	Power BI – interactive dashboard creation
-	•	Gamma – presentation of insights and storytelling
+## 🗂 Dataset Summary
+- ~3,900 transactions  
+- 18 features (demographics, purchases, behavior, shipping, discounts)  
+- Minimal missing values handled during preprocessing  
+- Suitable for segmentation, revenue analysis, and behavioral insights  
 
-⸻
+---
 
-⚙️ Project Steps
-	1.	Data Loading
-	•	Imported dataset using pandas
-	2.	Exploratory Data Analysis (EDA)
-	•	Checked structure, distributions, and outliers
-	•	Explored revenue, demographics, and purchase patterns
-	3.	Data Cleaning & Preparation
-	•	Handled missing values
-	•	Standardized column names
-	•	Created new features (age groups, purchase frequency)
-	•	Removed redundant columns
-	4.	Database Integration
-	•	Loaded cleaned dataset into PostgreSQL
-	5.	SQL Business Analysis
-Example insights extracted:
-	•	Revenue by gender
-	•	Top-rated products
-	•	Discount impact on spending
-	•	Subscriber vs non-subscriber behavior
-	•	Revenue contribution by age group
-	6.	Dashboard Development
-	•	Built an interactive Power BI dashboard
-	•	Highlighted KPIs, revenue trends, customer segments, and product insights
-	7.	Reporting & Presentation
-	•	Created business report
-	•	Prepared final presentation using Gamma
+## 🛠 Tech Stack
 
-⸻
+| Tool | Purpose |
+|------|--------|
+| **Python (Pandas, NumPy, Matplotlib, Seaborn)** | Data cleaning & EDA |
+| **PostgreSQL** | Business analysis using SQL |
+| **Power BI** | Dashboard & visualization |
+| **Gamma** | Presentation & reporting |
 
-📈 Dashboard Results
+---
 
-Key insights discovered:
-	•	Loyal customers generate a major share of revenue
-	•	Discount usage influences purchase frequency
-	•	Certain age groups show higher spending potential
-	•	Subscription users tend to spend more consistently
+## ⚙️ Project Workflow
 
-⸻
+### 🐍 Data Preparation (Python)
+- Loaded dataset using Pandas  
+- Explored structure with `.info()` and `.describe()`  
+- Handled missing values  
+- Standardized column names  
+- Created derived features (age groups, frequency metrics)  
 
-💼 Business Impact
-	•	Supports targeted marketing campaigns
-	•	Helps optimize discount strategy
-	•	Identifies high-value customer segments
-	•	Enables leadership to make data-driven decisions
+---
 
-⸻
+### 🗄 SQL Business Analysis (PostgreSQL)
+Key business questions answered:
+- Revenue contribution by gender  
+- Customer segmentation (New / Returning / Loyal)  
+- Top rated and most purchased products  
+- Shipping type comparison  
+- Subscriber vs Non-subscriber behavior  
+- Discount dependency analysis  
 
-📁 Project Structure
+---
+
+### 📊 Dashboard (Power BI)
+The dashboard includes:
+- KPI cards for revenue and customer metrics  
+- Segment-wise revenue breakdown  
+- Product performance visuals  
+- Purchase trends and filters  
+
+---
+
+## 📈 Key Insights
+- Loyal customers contribute the majority of revenue  
+- Some discounted customers still generate high purchase value  
+- Shipping type slightly impacts transaction amount  
+- Certain products consistently show higher ratings and demand  
+
+---
+
+## 💼 Business Impact
+This analysis enables businesses to:
+- Improve customer targeting strategies  
+- Optimize discount usage  
+- Promote top-performing products  
+- Design loyalty and subscription programs  
+- Make faster data-driven decisions  
+
+---
+
+## 📁 Project Structure
 
 Customer-Shopping-Analysis/
 │
-├── data/                # Raw dataset
-├── notebooks/           # Python EDA & cleaning scripts
-├── sql/                 # SQL analysis queries
-├── dashboard/           # Power BI file
-├── report/              # Business report
-├── presentation/        # Gamma presentation
+├── data/                 # Raw dataset
+├── notebooks/            # Python analysis notebooks
+├── sql/                  # SQL scripts
+├── dashboard/            # Power BI file
+├── presentation/         # Gamma report / slides
 └── README.md
 
+---
 
-⸻
+## ▶️ How to Run the Project
 
-▶️ How to Run
-	1.	Clone the repository
-	2.	Install Python dependencies
-
+### 1️⃣ Python Setup
+```bash
 pip install pandas numpy matplotlib seaborn psycopg2
 
-
-	3.	Run the Python scripts/notebooks for cleaning & EDA
-	4.	Load the cleaned dataset into PostgreSQL
-	5.	Execute SQL queries from the /sql folder
-	6.	Open the Power BI file to explore the dashboard
+Run the notebook to clean and export the dataset.
 
 ⸻
 
-If you want, I can also:
-	•	✅ Tailor this README specifically for Data Analyst recruiter keywords
-	•	✅ Add a short GitHub project description line
-	•	✅ Write a LinkedIn post to showcase this project
+2️⃣ PostgreSQL Setup
+	•	Create database
+	•	Import cleaned dataset
+	•	Execute SQL queries from /sql
 
-Just tell me what you want next 🙂
+⸻
+
+3️⃣ Power BI
+	•	Open .pbix file
+	•	Connect to PostgreSQL or dataset
+	•	Refresh to load visuals
+
+⸻
+
+👨‍💻 Author
+
+Syed Md Riaz
+Aspiring Data Analyst | Python • SQL • Power BI
+
+📧 syed.riaz1406@gmail.com
+🌍 India
+
